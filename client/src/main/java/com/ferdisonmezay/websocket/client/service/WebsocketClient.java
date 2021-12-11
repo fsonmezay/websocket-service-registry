@@ -42,7 +42,7 @@ public class WebsocketClient {
     public void connectToServer() {
         log.info("Trying to connect to the server!");
         String clientId = UUID.randomUUID().toString();
-        StompSession stompSession = null;
+        StompSession stompSession;
         try {
             stompSession = connect().get();
             subscribe(stompSession, clientId);
