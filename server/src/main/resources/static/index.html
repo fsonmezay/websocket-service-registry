@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket Service Registry Management UI</title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/sockjs.min.js"></script>
+    <script src="./assets/js/stomp.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-white">
+        <div class="container py-2">
+            <a class="navbar-brand" href="/">Websocket Client Manager</a>
+            <div>
+                <button id="disconnect" class="btn btn-danger" type="submit" disabled="disabled">Disconnect</button>
+                <button id="connect" class="btn btn-outline-success ml-3" type="submit">Connect</button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="client-container" class="container mt-5">
+        <h3 class="mb-4">Clients</h3>
+        <div class="row" id="clients"></div>
+    </div>
+</body>
+</html>
